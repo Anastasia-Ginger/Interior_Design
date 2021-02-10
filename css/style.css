@@ -1,0 +1,153 @@
+@import url(bootstrap.css);
+@import url(bootstrap-reboot.css);
+@import url(bootstrap-grid.css);
+@font-face {
+  font-family: 'Muli';
+  src: url("../fonts/Muli-Regular.eot");
+  src: url("../fonts/Muli-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli-Regular.woff2") format("woff2"), url("../fonts/Muli-Regular.woff") format("woff"), url("../fonts/Muli-Regular.ttf") format("truetype"), url("../fonts/Muli-Regular.svg#Muli-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+body {
+  font-family: 'Muli', sans-serif; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px; } }
+
+header {
+  background-color: #222222; }
+  header .navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 15px; }
+    header .navbar-dark .navbar-nav .nav-link:hover, header .navbar-dark .navbar-nav .nav-link.active {
+      color: #ffa000; }
+  header .nav-item {
+    margin-left: 58px; }
+  header .navbar-toggler {
+    border-radius: 0;
+    border: none; }
+    header .navbar-toggler:hover, header .navbar-toggler:focus {
+      border: none; }
+  header button:focus {
+    outline: none; }
+
+.dropdown-menu {
+  padding: 0;
+  top: 50px;
+  background-color: #222222;
+  border-top: 4px solid #ffa000;
+  border-radius: 0; }
+  .dropdown-menu .dropdown-item {
+    color: #e0e0e0; }
+    .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+      color: #ffa000;
+      background-color: transparent; }
+  .dropdown-menu .border-b {
+    border-bottom: 1px solid #424242; }
+
+.dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free", sans-serif;
+  vertical-align: 0;
+  margin-left: 0; }
+
+.about_us {
+  background-image: url("../images/about-us_bg.jpg");
+  background-size: cover;
+  background-position-x: center;
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  .about_us h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 414px) {
+      .about_us h1 {
+        font-size: 40px; } }
+  .about_us .breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0; }
+  .about_us .breadcrumb-item a {
+    color: #e0e0e0; }
+    .about_us .breadcrumb-item a:hover {
+      text-decoration: none;
+      color: #ffa000; }
+  .about_us .breadcrumb-item.active {
+    color: #ffa000; }
+  .about_us .breadcrumb-item + .breadcrumb-item::before {
+    color: #e0e0e0;
+    content: "\f101";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free", sans-serif; }
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222222; }
+
+p {
+  font-size: 15px;
+  color: #222222;
+  line-height: 24px; }
+
+h3 {
+  font-size: 20px;
+  color: #222222;
+  font-weight: bold; }
+
+.about_agency {
+  padding-top: 80px;
+  padding-bottom: 32px; }
+  .about_agency h3 {
+    margin-top: 20px;
+    margin-bottom: 18px; }
+  .about_agency ul {
+    padding-inline-start: 10px;
+    margin-bottom: 0; }
+    .about_agency ul li {
+      list-style-type: none;
+      font-size: 15px;
+      margin-bottom: 12px; }
+      .about_agency ul li:last-of-type {
+        margin-bottom: 0; }
+      .about_agency ul li:before {
+        content: "\f00c";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free", sans-serif;
+        color: #ffa000;
+        padding-right: 5px; }
+
+.what_we_doing {
+  background-color: #eeeeee;
+  padding-top: 80px;
+  padding-bottom: 32px; }
+
+footer {
+  background-color: #222222; }
+  footer p {
+    color: #eeeeee; }
+    @media screen and (max-width: 414px) {
+      footer p {
+        text-align: center; } }
+  footer .soc {
+    text-align: right; }
+    @media screen and (max-width: 414px) {
+      footer .soc {
+        text-align: center; } }
+    footer .soc .soc-item {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      margin: 0px 10px; }
+      footer .soc .soc-item:hover i {
+        color: #ffa000; }
+      footer .soc .soc-item i {
+        font-size: 20px;
+        color: #eeeeee;
+        transition: 0.3s; }
+
+/*# sourceMappingURL=style.css.map */

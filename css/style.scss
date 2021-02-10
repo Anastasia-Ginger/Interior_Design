@@ -1,0 +1,193 @@
+@import "bootstrap.css";
+@import "bootstrap-reboot.css";
+@import "bootstrap-grid.css";
+@font-face {
+  font-family: 'Muli';
+  src: url('../fonts/Muli-Regular.eot');
+  src: url('../fonts/Muli-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Muli-Regular.woff2') format('woff2'),
+  url('../fonts/Muli-Regular.woff') format('woff'),
+  url('../fonts/Muli-Regular.ttf') format('truetype'),
+  url('../fonts/Muli-Regular.svg#Muli-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+$accent: #ffa000;
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+body{
+  font-family: 'Muli', sans-serif;
+}
+.container{
+  @media (min-width: 1200px){
+    max-width: 1170px;
+  }
+}
+header{
+  background-color: #222222;
+  .navbar-dark .navbar-nav .nav-link{
+    color: white;
+    font-size: 15px;
+    &:hover, &.active{
+      color: $accent;
+    }
+  }
+  .nav-item{
+    margin-left: 58px;
+  }
+  .navbar-toggler {
+    border-radius: 0;
+    border: none;
+    &:hover, &:focus{
+      border: none;
+    }
+  }
+  button:focus {
+    outline: none;
+  }
+}
+.dropdown-menu{
+  padding: 0;
+  top: 50px;
+  background-color: #222222;
+  border-top: 4px solid $accent;
+  border-radius: 0;
+  .dropdown-item{
+    color: #e0e0e0;
+    &:hover, &:focus{
+      color: $accent;
+      background-color: transparent;
+    }
+  }
+  .border-b{
+    border-bottom: 1px solid #424242;
+  }
+}
+.dropdown-toggle::after{
+  border: none;
+  content: "\f107";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free", sans-serif;
+  vertical-align: 0;
+  margin-left: 0;
+}
+.about_us{
+  background-image: url("../images/about-us_bg.jpg");
+  background-size: cover;
+  background-position-x: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @include max-screen(414px) {
+      font-size: 40px;;
+    }
+  }
+  .breadcrumb{
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+  .breadcrumb-item{
+    a{
+      color: #e0e0e0;
+      &:hover{
+        text-decoration: none;
+        color: $accent;
+      }
+    }
+    &.active {
+      color: $accent;
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: #e0e0e0;
+    content: "\f101";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free", sans-serif;
+  }
+}
+h2{
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222222;
+}
+p{
+  font-size: 15px;
+  color: #222222;
+  line-height: 24px;
+}
+h3{
+  font-size: 20px;
+  color: #222222;
+  font-weight: bold;
+}
+.about_agency{
+  padding-top: 80px;
+  padding-bottom: 32px;
+  h3{
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+  ul{
+    padding-inline-start: 10px;
+    margin-bottom: 0;
+    li {
+      list-style-type: none;
+      font-size: 15px;
+      margin-bottom: 12px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+      &:before {
+        content: "\f00c";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free", sans-serif;
+        color: $accent;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+.what_we_doing{
+  background-color: #eeeeee;
+  padding-top: 80px;
+  padding-bottom: 32px;
+}
+footer{
+  background-color: #222222;
+  p{
+    color: #eeeeee;
+    @include max-screen(414px) {
+      text-align: center;
+    }
+  }
+  .soc{
+    text-align: right;
+    @include max-screen(414px) {
+      text-align: center;
+    }
+    .soc-item {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      margin: 0px 10px;
+      &:hover i{
+        color: $accent;
+      }
+      i {
+        font-size: 20px;
+        color: #eeeeee;
+        transition: 0.3s;
+      }
+    }
+  }
+}
